@@ -26,7 +26,7 @@ Using **Plotly**, I:
 Stock-Market-Analysis/  
 │── html/  
 │   └── project.html              # Full interactive notebook (download & open in browser)
-|__ india_stocks_6years           # Cleaned data of about 6 years of 5 stocks(2019-2025)
+|__ india_stocks_6years.csv       # Cleaned data of about 6 years of 5 stocks(2019-2025)
 │  
 │── images/  
 │   ├── opening_prices.png          # Stock price trend chart  
