@@ -22,14 +22,20 @@ Using **Plotly**, I:
 
 ## 📂 Repository Structure  
 
-├── 📄 README.md                       # This file - your project guide
-├── 📂 html/             # Folder containing the interactive report
-│   └── 📄 project.html                # The fully interactive HTML dashboard
-├── 📂 images/                         # Static previews of all charts
-│   ├── ️opening_price.png
-│   ├── cumulative_return.png
-│   └── ... (10 charts total)
-└── 📓 technical_code.ipynb            # The original Jupyter Notebook with all code
+```bash
+Stock-Market-Analysis/  
+│── html/  
+│   └── project.html              # Full interactive notebook (download & open in browser)  
+│  
+│── images/  
+│   ├── opening_prices.png          # Stock price trend chart  
+│   ├── traded_value.png            # Volatility analysis chart  
+│   └── cumulative_returns.png    # Cumulative returns visualization  
+│  
+│── technical_code.ipynb          # Jupyter Notebook with Pandas & Plotly code  
+│── README.md                     # Project documentation (this file)  
+
+```
 
 ---
 
