@@ -15,8 +15,20 @@ Using **Pandas**, I:
 
 Using **Plotly**, I:  
 ✔️ Built **interactive stock price charts**  
-✔️ Visualized **daily volatility in returns**  
-✔️ Compared **cumulative returns** of the chosen stocks  
+
+ ![Opening_Price](images/opening_price_line_chart.png)
+
+✔️ Visualized **Moving Averages**
+
+ ![Moving_Averages](images/moving_averages.png)
+
+✔️ Compared **cumulative returns** of the chosen stocks 
+
+ ![Cumulative_Returns](images/cumulative_returns.png)
+
+✔️ Compared **collinearity** of the chosen stocks 
+
+  ![Collinearity](images/collinear_correaltions.png)
 
 ---
 
