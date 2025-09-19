@@ -111,6 +111,66 @@ If you’re a hiring manager, data enthusiast, curious learner, or you have any 
 📧 [Email](pradumnchauhan2812@gmail.com)!
 
 
+flowchart TD
+    %% Define styles for clarity
+    classDef user fill:#cde4ff,stroke:#333,stroke-width:2px;
+    classDef role fill:#ffd8b4,stroke:#333,stroke-width:2px;
+    classDef object fill:#d4edda,stroke:#333,stroke-width:2px;
+    classDef action fill:#f8d7da,stroke:#333,stroke-width:2px;
+
+    %% Admin Node
+    A[🔐 Database Administrator<br/><sub>THE DECISION MAKER</sub><br/><sub>Defines WHO can do WHAT</sub>]
+
+    %% Roles Section
+    subgraph Roles [ROLES: Job Titles with Clear Responsibilities]
+        direction LR
+        R1[<b>👥 Role: Sales Analyst</b><br/><sub>Can work with sales data</sub>]
+        R2[<b>👥 Role: Customer Support</b><br/><sub>Can view order & customer info</sub>]
+        R3[<b>👥 Role: Application Developer</b><br/><sub>Can read & write to app tables</sub>]
+    end
+
+    A -->|GRANTS| R1
+    A -->|GRANTS| R2
+    A -->|GRANTS| R3
+
+    %% Permissions Section
+    P1[<b>SELECT</b><br/><sub>Can READ data</sub>]
+    P2[<b>UPDATE</b><br/><sub>Can MODIFY existing data</sub>]
+    P3[<b>INSERT</b><br/><sub>Can ADD new data</sub>]
+    P4[<b>DENIED</b><br/><sub>Cannot access at all</sub>]
+
+    %% Assign Permissions to Roles
+    R1 --> |CAN DO| P1
+    R1 --> |CAN DO| P2
+
+    R2 --> |CAN DO| P1
+    R2 --> |CANNOT DO| P4
+
+    R3 --> |CAN DO| P1
+    R3 --> |CAN DO| P3
+
+    %% Objects Section
+    subgraph Objects [OBJECTS: What is being protected?]
+        direction LR
+        O1[<b>📊 Table: Sales_Data</b><br/><sub>Contains all sales records</sub>]
+        O2[<b>📋 Table: Customer_Info</b><br/><sub>Contains personal details</sub>]
+        O3[<b>📦 Table: Order_Details</b><br/><sub>Contains all orders</sub>]
+        O4[<b>🔐 Table: User_Accounts</b><br/><sub>Contains login info</sub>]
+    end
+
+    %% Link Permissions to Objects for each Role
+    P1 --> |ON| O1
+    P2 --> |ON| O1
+
+    P1 --> |ON| O2
+    P4 --> |ON| O2
+
+    P1 --> |ON| O3
+
+    P1 --> |ON| O4
+    P3 --> |ON| O4
+
+
 ✨ Clone the repo, download the interactive HTML, and explore how Pandas + Plotly bring stock market data to life!
 
 
